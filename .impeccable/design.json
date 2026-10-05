@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T13:30:00Z",
+  "title": "Design System: Alperen Sağlam · Apps",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Paper" },
+      "band": { "role": "neutral", "displayName": "Band" },
+      "ink": { "role": "neutral", "displayName": "Ink" },
+      "accent": { "role": "primary", "displayName": "Hub accent (fallback link colour outside app regions)" },
+      "lokma": { "role": "secondary", "displayName": "Lokma orange" },
+      "drawluma": { "role": "secondary", "displayName": "Drawluma pink" },
+      "puzzlelens": { "role": "secondary", "displayName": "PuzzleLens blue" },
+      "biverba": { "role": "secondary", "displayName": "Biverba amber" },
+      "watchntalk": { "role": "secondary", "displayName": "Watchntalk lamp amber" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The hub headline only." },
+      "headline": { "displayName": "Headline", "purpose": "Product names in bands and on app pages." },
+      "title": { "displayName": "Title", "purpose": "Section headings in guides and policies." },
+      "tagline": { "displayName": "Tagline", "purpose": "The line under a product name, in the app's ink." },
+      "body": { "displayName": "Body", "purpose": "Descriptions and policy text, max 68ch." },
+      "label": { "displayName": "Label", "purpose": "Navigation, facts, table headers, the language switch." }
+    },
+    "shadows": [
+      { "name": "icon", "value": "0 1px 2px rgba(0,0,0,.12), 0 8px 20px -6px rgba(0,0,0,.28)", "purpose": "App icons over 60px." },
+      { "name": "screenshot", "value": "0 2px 6px rgba(0,0,0,.08), 0 30px 60px -24px rgba(0,0,0,.35)", "purpose": "Product screenshots." },
+      { "name": "switch-thumb", "value": "0 1px 2px rgba(0,0,0,.12), 0 2px 6px -2px rgba(0,0,0,.12)", "purpose": "The active language button." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "All transitions: icon hover lift, arrow nudge, disclosure chevron." },
+      { "name": "lift", "value": "0.9s keyframes: translateY(-10px) scale(1.04) at 35%", "purpose": "A product band's icon when reached from the icon shelf." }
+    ],
+    "breakpoints": [
+      { "name": "shelf-3col", "value": "560px" },
+      { "name": "bar-compact", "value": "520px" },
+      { "name": "table-rows", "value": "720px" },
+      { "name": "band-stack", "value": "860px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled action (Watchntalk's Open on the web).",
+      "html": "<a class=\"ds-btn\" href=\"#\">Web'de aç</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 12px; background: #1d1d1f; color: #fff; text-decoration: none; font: 640 15px/1 'Mona Sans', system-ui, sans-serif; transition: transform .3s cubic-bezier(.16,1,.3,1), background-color .2s; } .ds-btn:hover { background: #000; transform: translateY(-1px); }"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "refersTo": "link-arrow",
+      "description": "Secondary actions in a product band, in the app's ink.",
+      "html": "<a class=\"ds-arrow\" href=\"#\"><span>Nasıl kullanılır</span><svg viewBox=\"0 0 16 16\" width=\"15\" height=\"15\" aria-hidden=\"true\"><path d=\"M3 8h9.5M8.5 3.5 13 8l-4.5 4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-arrow { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #b4470b; font: 620 16px/1 'Mona Sans', system-ui, sans-serif; text-decoration: none; } .ds-arrow svg { transition: transform .3s cubic-bezier(.16,1,.3,1); } .ds-arrow:hover svg { transform: translateX(3px); }"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "custom",
+      "refersTo": "language-switch",
+      "description": "TR/EN segmented control on every page.",
+      "html": "<div class=\"ds-lang\" role=\"group\" aria-label=\"Dil / Language\"><button aria-pressed=\"true\">TR</button><button aria-pressed=\"false\">EN</button></div>",
+      "css": ".ds-lang { display: inline-flex; padding: 3px; border-radius: 10px; background: #f5f5f7; } .ds-lang button { appearance: none; min-width: 40px; min-height: 34px; border: 0; border-radius: 8px; background: transparent; color: #6a6a6f; font: 650 13px/1 'Mona Sans', system-ui, sans-serif; cursor: pointer; } .ds-lang button[aria-pressed=true] { background: #fff; color: #1d1d1f; box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 2px 6px -2px rgba(0,0,0,.12); }"
+    },
+    {
+      "name": "Status Mark",
+      "kind": "chip",
+      "refersTo": "status",
+      "description": "Live (filled), in review (half), web-only (outline); always with a text label.",
+      "html": "<span class=\"ds-status\">App Store'da</span>",
+      "css": ".ds-status { display: inline-flex; align-items: center; gap: 8px; color: #424245; font: 600 14px/1.2 'Mona Sans', system-ui, sans-serif; } .ds-status::before { content: ''; width: 9px; height: 9px; border-radius: 2px; background: #f26b1d; box-shadow: inset 0 0 0 1.5px #b4470b; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The shelf the apps stand on",
+    "overview": "A white, well-lit page in the manner of Panic, Lux and Cultured Code: confident type, generous space, and the apps speaking through their real icons and screenshots. The hub owns no colour; each app brings its own. App pages share the stylesheet, so the hub and every policy page read as one site.",
+    "keyCharacteristics": ["Real icons, screenshots and the official App Store badge", "One borrowed colour per app", "Turkish and English on every page", "Policy text carried over word for word"],
+    "rules": [
+      { "name": "The Borrowed Colour Rule", "body": "The hub has no brand colour; colour appears only inside an app's region, taken from its icon.", "section": "colors" },
+      { "name": "The Ink-for-Text Rule", "body": "Vivid app colours never carry text; links and taglines use the app's ink value.", "section": "colors" }
+    ],
+    "dos": ["Keep every App Store Connect URL; restyle in place", "Carry policy text word for word with its last-updated line", "Write in first person and say where an app stops"],
+    "donts": ["No hub colour or gradient headline", "No version numbers on the hub; update review states when they change", "No eyebrow labels above headings", "Don't touch /puzzlelens/review/ or the root app-ads.txt"]
+  }
+}

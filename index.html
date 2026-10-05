@@ -1,20 +1,206 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alperen Sağlam</title>
-<style>
-body{margin:0;min-height:100vh;display:grid;place-items:center;
-     background:#F8F9FA;color:#15151A;
-     font:16px/1.6 -apple-system,system-ui,sans-serif}
-main{max-width:34rem;padding:2rem}
-h1{font-size:1.5rem;margin:0 0 .75rem}
-a{color:#FF4B72}
-ul{padding-left:1.1rem}
-</style></head>
-<body><main>
-<h1>Alperen Sağlam</h1>
-<p>iOS uygulamaları.</p>
-<ul>
-  <li><a href="https://alperensaglam.github.io/drawluma-site/">Drawluma</a> — kâğıda bakarak çizim asistanı</li>
-</ul>
-</main></body></html>
+<html lang="tr" data-title-tr="Alperen Sağlam · Uygulamalar" data-title-en="Alperen Sağlam · Apps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Alperen Sağlam · Uygulamalar</title>
+  <meta name="description" content="Alperen Sağlam'ın uygulamaları: Lokma, Drawluma, PuzzleLens, Biverba ve Watchntalk. Nasıl kullanılır, destek ve gizlilik politikaları. Apps by Alperen Sağlam: how to use, support and privacy policies.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Alperen Sağlam · Apps">
+  <meta property="og:description" content="Lokma, Drawluma, PuzzleLens, Biverba and Watchntalk: how to use, support and privacy.">
+  <meta property="og:image" content="https://alperensaglam.github.io/assets/apps/lokma-icon.png">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#apps"><span data-lang="tr">Uygulamalara geç</span><span data-lang="en">Skip to the apps</span></a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M3 8h9.5M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">Alperen Sağlam</a>
+    <nav class="nav" aria-label="Menü">
+      <a class="nav-wide" href="#apps"><span data-lang="tr">Uygulamalar</span><span data-lang="en">Apps</span></a>
+      <a href="#destek"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a>
+      <a class="nav-wide" href="#iletisim"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-set="tr" aria-pressed="true">TR</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title"><span data-lang="tr">Tek bir işi iyi yapan uygulamalar.</span><span data-lang="en">Apps that each do one thing well.</span></h1>
+    <p class="intro" data-lang="tr">Ben Alperen Sağlam; iPhone ve web için uygulamalar yapıyorum. Her birinin nasıl kullanıldığı, destek adresi ve gizlilik politikası bu sayfada.</p>
+    <p class="intro" data-lang="en">I'm Alperen Sağlam, and I make apps for iPhone and the web. How each one works, where to get help and its privacy policy are all on this page.</p>
+    <ul class="shelf" aria-label="Uygulamalar / Apps">
+      <li><a href="#watchntalk"><img src="/assets/apps/watchntalk-icon.png" alt="" width="96" height="96"><div><strong>Watchntalk</strong><span>Web · iPhone</span></div></a></li>
+      <li><a href="#lokma"><img src="/assets/apps/lokma-icon.png" alt="" width="96" height="96"><div><strong>Lokma</strong><span>iPhone</span></div></a></li>
+      <li><a href="#puzzlelens"><img src="/assets/apps/puzzlelens-icon.png" alt="" width="96" height="96"><div><strong>PuzzleLens</strong><span>iPhone</span></div></a></li>
+      <li><a href="#drawluma"><img src="/assets/apps/drawluma-icon.png" alt="" width="96" height="96"><div><strong>Drawluma</strong><span>iPhone</span></div></a></li>
+      <li><a href="#biverba"><img src="/assets/apps/biverba-icon.png" alt="" width="96" height="96"><div><strong>Biverba</strong><span>iPhone · iPad</span></div></a></li>
+    </ul>
+  </section>
+
+  <div class="products" id="apps">
+    <section class="product app-watchntalk" id="watchntalk" aria-labelledby="watchntalk-title">
+      <div class="product-in">
+        <div class="product-copy">
+          <img class="product-icon" src="/assets/apps/watchntalk-icon.png" alt="" width="76" height="76">
+          <h2 id="watchntalk-title">Watchntalk</h2>
+          <p class="tagline"><span data-lang="tr">Birlikte izle, birlikte konuş.</span><span data-lang="en">Watch together, talk together.</span></p>
+          <p class="about" data-lang="tr">Arkadaşlarınla aynı videoyu aynı saniyede izle, sesli ve yazılı konuş. Hesap yok; bir bağlantı yeter. YouTube ve video bağlantıları doğrudan oynar; Netflix gibi siteler Chrome eklentisiyle, herkes kendi hesabından izlerken eşitlenir.</p>
+          <p class="about" data-lang="en">Watch the same video at the same second with friends, and talk by voice or chat. No account; a link is enough. YouTube and video links play directly, and sites like Netflix stay in sync through the Chrome extension, each person on their own account.</p>
+          <ul class="facts">
+            <li class="status"><span data-lang="tr">Web'de yayında</span><span data-lang="en">Live on the web</span></li>
+            <li class="status review"><span data-lang="tr">iPhone uygulaması App Store incelemesinde</span><span data-lang="en">iPhone app in App Store review</span></li>
+            <li><span data-lang="tr">Chrome eklentisi</span><span data-lang="en">Chrome extension</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="https://watchntalk.vercel.app/"><span data-lang="tr">Web'de aç</span><span data-lang="en">Open on the web</span></a>
+            <a class="link-arrow" href="https://watchntalk.vercel.app/support.html"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="link-arrow" href="https://watchntalk.vercel.app/extension-guide.html"><span data-lang="tr">Eklenti</span><span data-lang="en">Extension</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="link-arrow" href="https://watchntalk.vercel.app/privacy.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="product-shot"><img src="/assets/apps/watchntalk-shot.webp" alt="" width="720" height="1558" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="product app-lokma" id="lokma" aria-labelledby="lokma-title">
+      <div class="product-in">
+        <div class="product-copy">
+          <img class="product-icon" src="/assets/apps/lokma-icon.png" alt="" width="76" height="76">
+          <h2 id="lokma-title">Lokma</h2>
+          <p class="tagline"><span data-lang="tr">Kaloriyi tahmin etme, ölç.</span><span data-lang="en">Measure, don't guess.</span></p>
+          <p class="about" data-lang="tr">Tabağındaki yemeğin kalorisini fotoğraftan tahmin etmek yerine ölçer: LiDAR'lı iPhone'larda derinlik sensörü yemeğin hacmini ölçer, yoğunluktan gramı, oradan kalori ve makroları hesaplar. Diğer iPhone'larda porsiyon tahmin edilir ve bu açıkça gösterilir.</p>
+          <p class="about" data-lang="en">Instead of guessing calories from a photo, Lokma measures them: on iPhones with LiDAR the depth sensor measures the food's volume, density gives the weight, and weight gives calories and macros. On other iPhones the portion is estimated, and the app says so.</p>
+          <ul class="facts">
+            <li class="status"><span data-lang="tr">App Store'da</span><span data-lang="en">On the App Store</span></li>
+            <li>iPhone</li>
+            <li><span data-lang="tr">Ücretsiz · LOKMA Pro</span><span data-lang="en">Free · LOKMA Pro</span></li>
+          </ul>
+          <div class="actions">
+            <a class="badge" href="https://apps.apple.com/app/id6815305987"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
+            <a class="link-arrow" href="/lokma-app/"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="link-arrow" href="/lokma-app/privacy/"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="product-shot"><img src="/assets/apps/lokma-shot.webp" alt="" width="720" height="1558" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="product app-puzzlelens" id="puzzlelens" aria-labelledby="puzzlelens-title">
+      <div class="product-in">
+        <div class="product-copy">
+          <img class="product-icon" src="/assets/apps/puzzlelens-icon.png" alt="" width="76" height="76">
+          <h2 id="puzzlelens-title">PuzzleLens</h2>
+          <p class="tagline"><span data-lang="tr">Yapboz parçasının yerini bul.</span><span data-lang="en">Find where the piece goes.</span></p>
+          <p class="about" data-lang="tr">Yapbozun resmini bir kez tararsın; takıldığın parçanın fotoğrafını çekersin, uygulama yerini söyler. İstersen yalnızca bölgeyi, istersen tam hücreyi ve parçanın hangi yöne döneceğini. Parça tanıma tamamen iPhone'unda çalışır.</p>
+          <p class="about" data-lang="en">Scan the puzzle's picture once, photograph the piece you're stuck on, and the app tells you where it goes: just the area if you like, or the exact cell and which way to turn it. Piece recognition runs entirely on your iPhone.</p>
+          <ul class="facts">
+            <li class="status"><span data-lang="tr">App Store'da</span><span data-lang="en">On the App Store</span></li>
+            <li>iPhone</li>
+          </ul>
+          <div class="actions">
+            <a class="badge" href="https://apps.apple.com/app/id6812349555"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
+            <a class="link-arrow" href="/puzzlelens/"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="link-arrow" href="/puzzlelens/privacy/"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="product-shot"><img src="/assets/apps/puzzlelens-shot.webp" alt="" width="720" height="1564" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="product app-drawluma" id="drawluma" aria-labelledby="drawluma-title">
+      <div class="product-in">
+        <div class="product-copy">
+          <img class="product-icon" src="/assets/apps/drawluma-icon.png" alt="" width="76" height="76">
+          <h2 id="drawluma-title">Drawluma</h2>
+          <p class="tagline"><span data-lang="tr">Kâğıda bakarak çizim asistanı.</span><span data-lang="en">A drawing assistant for real paper.</span></p>
+          <p class="about" data-lang="tr">Fotoğrafını temiz bir kontur çizimine çevirir; sen de onu kendi kâğıdına çizersin. Telefonu bir bardağa dayayıp kamerayla, AR ile masadaki kâğıda sabitleyerek ya da ekranı ışıklı masa gibi kullanarak.</p>
+          <p class="about" data-lang="en">Turns your photo into a clean contour drawing that you draw onto your own paper: with the phone propped on a glass and the camera, anchored to the paper in AR, or with the screen as a light box.</p>
+          <ul class="facts">
+            <li class="status"><span data-lang="tr">App Store'da</span><span data-lang="en">On the App Store</span></li>
+            <li>iPhone</li>
+            <li><span data-lang="tr">Ücretsiz · reklamsız PRO</span><span data-lang="en">Free · ad-free PRO</span></li>
+          </ul>
+          <div class="actions">
+            <a class="badge" href="https://apps.apple.com/app/id6806856472"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
+            <a class="link-arrow" href="/drawluma-site/"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="link-arrow" href="/drawluma-site/privacy.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="product-shot"><img src="/assets/apps/drawluma-shot.webp" alt="" width="720" height="1564" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="product app-biverba" id="biverba" aria-labelledby="biverba-title">
+      <div class="product-in">
+        <div class="product-copy">
+          <img class="product-icon" src="/assets/apps/biverba-icon.png" alt="" width="76" height="76">
+          <h2 id="biverba-title">Biverba</h2>
+          <p class="tagline"><span data-lang="tr">İki kişi, tek telefon, iki dil.</span><span data-lang="en">Two people, one phone, two languages.</span></p>
+          <p class="about" data-lang="tr">Telefonu masanın ortasına koyun: herkes kendi dilinde konuşur, karşısındaki kendi dilinde duyar. Kendi dilinin düğmesini basılı tut, konuş; bıraktığın an çevrilir ve yüksek sesle okunur.</p>
+          <p class="about" data-lang="en">Put the phone in the middle of the table: each person speaks their own language and hears the other in theirs. Hold your language's button and speak; the moment you let go it is translated and read aloud.</p>
+          <ul class="facts">
+            <li class="status"><span data-lang="tr">App Store'da</span><span data-lang="en">On the App Store</span></li>
+            <li>iPhone · iPad</li>
+          </ul>
+          <div class="actions">
+            <a class="badge" href="https://apps.apple.com/app/id6797633689"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
+            <a class="link-arrow" href="/biverba-privacy/support/"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+            <a class="link-arrow" href="/biverba-privacy/"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="product-shot"><img src="/assets/apps/biverba-shot.webp" alt="" width="720" height="1561" loading="lazy"></figure>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="destek" aria-labelledby="support-title">
+    <h2 id="support-title"><span data-lang="tr">Destek ve gizlilik</span><span data-lang="en">Support and privacy</span></h2>
+    <p class="lede" data-lang="tr">Her uygulamanın kullanım rehberi ve gizlilik politikası tek tıkla burada.</p>
+    <p class="lede" data-lang="en">Every app's guide and privacy policy, one click away.</p>
+    <table class="index">
+      <thead><tr><th scope="col"><span data-lang="tr">Uygulama</span><span data-lang="en">App</span></th><th scope="col"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span></th><th scope="col"><span data-lang="tr">Gizlilik politikası</span><span data-lang="en">Privacy policy</span></th><th scope="col"><span data-lang="tr">Nereden</span><span data-lang="en">Get it</span></th></tr></thead>
+      <tbody>
+        <tr class="app-watchntalk"><td><span class="who"><img src="/assets/apps/watchntalk-icon.png" alt="" width="36" height="36">Watchntalk</span></td><td data-label="Rehber · Guide"><a href="https://watchntalk.vercel.app/support.html"><span data-lang="tr">Destek ve SSS</span><span data-lang="en">Support and FAQ</span></a></td><td data-label="Gizlilik · Privacy"><a href="https://watchntalk.vercel.app/privacy.html"><span data-lang="tr">Gizlilik politikası</span><span data-lang="en">Privacy policy</span></a></td><td data-label="Nereden · Get it"><a href="https://watchntalk.vercel.app/">watchntalk.vercel.app</a></td></tr>
+        <tr class="app-lokma"><td><span class="who"><img src="/assets/apps/lokma-icon.png" alt="" width="36" height="36">Lokma</span></td><td data-label="Rehber · Guide"><a href="/lokma-app/"><span data-lang="tr">Kullanım ve SSS</span><span data-lang="en">Guide and FAQ</span></a></td><td data-label="Gizlilik · Privacy"><a href="/lokma-app/privacy/"><span data-lang="tr">Gizlilik politikası</span><span data-lang="en">Privacy policy</span></a></td><td data-label="Nereden · Get it"><a href="https://apps.apple.com/app/id6815305987">App Store</a></td></tr>
+        <tr class="app-puzzlelens"><td><span class="who"><img src="/assets/apps/puzzlelens-icon.png" alt="" width="36" height="36">PuzzleLens</span></td><td data-label="Rehber · Guide"><a href="/puzzlelens/"><span data-lang="tr">Kullanım ve SSS</span><span data-lang="en">Guide and FAQ</span></a></td><td data-label="Gizlilik · Privacy"><a href="/puzzlelens/privacy/"><span data-lang="tr">Gizlilik politikası</span><span data-lang="en">Privacy policy</span></a></td><td data-label="Nereden · Get it"><a href="https://apps.apple.com/app/id6812349555">App Store</a></td></tr>
+        <tr class="app-drawluma"><td><span class="who"><img src="/assets/apps/drawluma-icon.png" alt="" width="36" height="36">Drawluma</span></td><td data-label="Rehber · Guide"><a href="/drawluma-site/"><span data-lang="tr">Kullanım ve SSS</span><span data-lang="en">Guide and FAQ</span></a></td><td data-label="Gizlilik · Privacy"><a href="/drawluma-site/privacy.html"><span data-lang="tr">Gizlilik politikası</span><span data-lang="en">Privacy policy</span></a></td><td data-label="Nereden · Get it"><a href="https://apps.apple.com/app/id6806856472">App Store</a></td></tr>
+        <tr class="app-biverba"><td><span class="who"><img src="/assets/apps/biverba-icon.png" alt="" width="36" height="36">Biverba</span></td><td data-label="Rehber · Guide"><a href="/biverba-privacy/support/"><span data-lang="tr">Kullanım ve SSS</span><span data-lang="en">Guide and FAQ</span></a></td><td data-label="Gizlilik · Privacy"><a href="/biverba-privacy/"><span data-lang="tr">Gizlilik politikası</span><span data-lang="en">Privacy policy</span></a></td><td data-label="Nereden · Get it"><a href="https://apps.apple.com/app/id6797633689">App Store</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section contact-band" id="iletisim" aria-labelledby="contact-title">
+    <div>
+      <h2 id="contact-title"><span data-lang="tr">Bir sorun mu var?</span><span data-lang="en">Something not working?</span></h2>
+      <p class="lede" data-lang="tr">Bir hata, soru ya da öneri için doğrudan bana yaz; mesajlara kendim yanıt veriyorum.</p>
+      <p class="lede" data-lang="en">For a bug, a question or an idea, write to me directly; I answer messages myself.</p>
+    </div>
+    <div>
+      <a class="mail" href="mailto:alperensaglam177@gmail.com">alperensaglam177@gmail.com</a>
+      <p class="tip" data-lang="tr">Uygulamanın adını, iPhone modelini ve iOS sürümünü yazarsan sorunu daha hızlı çözebilirim. Şifre ya da ödeme bilgisi gönderme.</p>
+      <p class="tip" data-lang="en">Include the app's name, your iPhone model and iOS version and I can fix it faster. Never send passwords or payment details.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© 2026 Alperen Sağlam</span>
+  <span class="spacer"></span>
+  <a href="https://github.com/alperensaglam">GitHub</a>
+  <a href="mailto:alperensaglam177@gmail.com"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></a>
+</footer>
+</body>
+</html>
