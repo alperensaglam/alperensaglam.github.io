@@ -1,3 +1,6 @@
-# Drawluma - Authorized Sellers for Apps
+# Drawluma, PuzzleLens, Watchntalk - Authorized Sellers for Apps
 # IAB Tech Lab app-ads.txt v1.0
+# Yeni AdMob hesabi (2026-11): pub-7826416240557419. Eski satir, eski
+# surumler o hesaptan reklam gosterdigi surece kaliyor.
+google.com, pub-7826416240557419, DIRECT, f08c47fec0942fa0
 google.com, pub-3839238983276420, DIRECT, f08c47fec0942fa0
